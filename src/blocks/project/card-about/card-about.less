@@ -1,0 +1,63 @@
+.card-about {
+	display: inline-block;
+	width: 33%;
+
+	&__icon {
+		display: inline-block;
+		width: 55px;
+		height: 55px;
+		margin-right: 20px;
+
+		border-radius: 50%;
+		border: 1px solid @orange;
+		text-align: center;
+		line-height: 55px;
+	}
+
+	&__content {
+		display: inline-block;
+		width: 100%;
+		max-width: 220px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+
+	&__descr {
+		line-height: 2.2rem;
+
+		& span {
+			display: block;
+			margin-top: 8px;
+		}
+	}
+
+	@media @width-md {
+		width: 50%;
+
+		&:not(:nth-child(-n+2)) {
+			margin-top: 35px;
+		}
+	}
+
+	@media @width-sm {
+		width: 100%;
+		text-align: center;
+
+		&:not(:nth-child(-n+1)) {
+			margin-top: 35px;
+		}
+
+		&__icon {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		&__content {
+			max-width: 100%;
+		}
+	}
+}
