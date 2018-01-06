@@ -72,7 +72,7 @@ gulp.task('scripts:libs', function() {
 
 // Оптимизация графики
 gulp.task('img', function () {
-  return gulp.src(['src/img/**/*', 'src/blocks/**/*.jpg']) 
+  return gulp.src(['src/img/**/*', 'src/blocks/**/*.+(png|jpg|gif|jpeg)']) 
     .pipe(gp.newer('build/img/'))
     .pipe(gp.rename({dirname: ''}))
     .pipe(gulp.dest('build/img/')) 
@@ -95,7 +95,7 @@ gulp.task('watch', function() {
 	gulp.watch('src/**/*.less', gulp.series('less'));
 	gulp.watch(['src/js/**/*.js', 'src/blocks/**/*.js'], gulp.series('scripts'));
 	gulp.watch(['src/libs/**/*.js', 'src/blocks/**/*.js'], gulp.series('scripts:libs'));
-	gulp.watch(['src/img/**/*', 'src/blocks/**/*.{png, jpg}'], gulp.series('img'));
+	gulp.watch(['src/img/**/*', 'src/blocks/project/**/*.+(png|jpg|gif|jpeg)'], gulp.series('img'));
 });
 
 
