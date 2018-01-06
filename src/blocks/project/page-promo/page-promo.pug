@@ -1,0 +1,6 @@
+mixin page-promo(bgUrl, title, text, btnText)
+	+b.SECTION.page-promo(style='background-image: url(' + bgUrl + ')') 
+		+e.container
+			+e.title= title 
+			+e.P.descr= text
+			+e.BUTTON.btn.btn= btnText
