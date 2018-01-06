@@ -32,11 +32,15 @@
 		display: flex;
 
 		&-item {
-			text-transform: uppercase;
-			color: #fff;
-			.trs();
 
-			&:hover:not(.page-header__list-item--active) {
+			& a {
+				font-weight: 400;
+				text-transform: uppercase;
+				color: #fff;
+				.trs();
+			}
+
+			&:hover:not(.page-header__list-item--active) a {
 				color: @orange;
 			}
 
