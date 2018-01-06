@@ -1,0 +1,34 @@
+.headline {
+	text-align: center;
+	
+	&__title {
+		margin-bottom: 15px;
+		font: 400 4.5rem/6rem @font-second;
+	}
+	
+	&__descr {
+		width: 100%;
+		max-width: 788px;
+		margin: auto;
+		font-weight: 300;
+		line-height: 22px;
+	}
+
+	@media @width-sm {
+		text-align: center;
+
+		&__title {
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+		}
+
+		&__descr {
+			overflow: hidden;
+    	text-overflow: ellipsis;
+    	display: -webkit-box;
+    	-webkit-line-clamp: 2;
+    	-webkit-box-orient: vertical;
+		}
+	}
+
+}
