@@ -1,0 +1,88 @@
+.page-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #2e2e2e;
+	z-index: -1;
+
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 115px;
+	}
+
+	&__logo,
+	&__btn,
+	&__social {
+		width: 33%;
+	}
+
+	&__logo {
+
+		&-img {
+			display: block;
+			width: 209px;
+			height: 52px;
+			background: url(../img/logo.png) no-repeat left center;
+			background-size: contain;
+		}
+	}
+
+	&__btn  {
+		text-align: center;
+		text-transform: uppercase;
+		color: @orange;
+	}
+
+	&__social {
+		text-align: right;
+
+		&-icon {
+
+		}
+	}
+
+	&__copyright {
+		width: 100%;
+		height: 35px;
+		background-color: #292929;
+
+		&-container {
+			text-align: center;
+
+			p {
+				line-height: 3.5rem;
+				color: #999;
+			}
+		}
+	}
+
+	@media @width-sm {
+
+		&__logo {
+			width: 50%;
+
+			&-img {
+				width: 117px;
+				height: 71px;
+				background-image: url(../img/logo--sm.png);
+			}
+		}
+
+		&__btn {
+			width: 50%;	
+		}
+
+		&__social {
+			width: 100%;
+			text-align: center;
+		}
+
+	}
+
+}
