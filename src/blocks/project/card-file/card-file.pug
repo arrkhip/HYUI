@@ -1,0 +1,6 @@
+mixin card-file(imgUrl, title)
+	+b.card-file 
+		+e.banner(style='background-image: url(' + imgUrl + ')') 
+		+e.inner
+			+e.title= title
+			+e.A.btn.btn(href='img/logo.png' download='document name') Завантажити
