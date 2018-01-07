@@ -1,0 +1,42 @@
+.partners {
+	padding-top: 45px;
+	padding-bottom: 65px;
+	background-color: #f8f8f8;
+
+	& .headline__descr {
+		max-width: 365px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 45px;
+
+		&-item {
+			display: inline-flex;
+			align-items: center;
+
+			& img {
+				filter: grayscale(100%) opacity(60%);
+				.trs(filter);
+
+				&:hover {
+					filter: none;
+				}
+			}
+
+			&:not(:last-child) {
+				padding-right: 45px;
+				border-right: 1px solid #d7d7d7;
+			}
+		}
+	}
+
+	@media @width-lg {
+		
+		&__list-item:not(:last-child) {
+			padding-right: 20px;
+			border-right: none;
+		}
+	}
+}
