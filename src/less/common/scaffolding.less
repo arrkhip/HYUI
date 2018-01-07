@@ -47,7 +47,17 @@ textarea:focus {
   outline: none; 
 }
 
-input[type="text"]:focus::-webkit-input-placeholder {color: transparent;}
-input[type="text"]:focus::-moz-placeholder          {color: transparent;}
-input[type="text"]:focus:-moz-placeholder           {color: transparent;}
-input[type="text"]:focus:-ms-input-placeholder      {color: transparent;}
+input[type="text"]:focus::-webkit-input-placeholder { color: transparent; }
+input[type="text"]:focus::-moz-placeholder          { color: transparent; }
+input[type="text"]:focus:-moz-placeholder           { color: transparent; }
+input[type="text"]:focus:-ms-input-placeholder      { color: transparent; }
+
+textarea:focus::-webkit-input-placeholder           { color: transparent; }
+textarea:focus::-moz-placeholder                    { color: transparent; }
+textarea:focus:-moz-placeholder                     { color: transparent; }
+textarea:focus:-ms-input-placeholder                { color: transparent; }
+
+::-webkit-input-placeholder                         { color: fade(@grey-dark, 50%); }
+::-moz-placeholder                                  { color: fade(@grey-dark, 50%); }
+:-moz-placeholder                                   { color: fade(@grey-dark, 50%); }
+:-ms-input-placeholder                              { color: fade(@grey-dark, 50%); }
