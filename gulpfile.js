@@ -21,6 +21,7 @@ gulp.task('serve', function() {
 // Работа с pug файлами, требует доработки - подключения плагина emitty
 gulp.task('pug', function() {
 	return gulp.src('src/pug/pages/*.pug')
+		.pipe(gp.plumber())
 		.pipe(gp.pug({
 			pretty: true
 		}))
