@@ -5,7 +5,14 @@
 	width: 100%;
 	padding: 5px 0;
 	background-color: rgba(36, 36, 36, 0.65);
-	
+	z-index: 1;
+	.trs(top, .3s, ease);
+
+	&--fixed {
+		top: 0;
+		background-color: #2e2e2e;
+	}
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -30,6 +37,7 @@
 
 	&__list {
 		display: flex;
+		align-items: center;
 
 		&-item {
 
@@ -45,8 +53,18 @@
 			}
 
 			&--active {
-				padding: 0 4px 8px 4px;
-				border-bottom: 2px solid @orange;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 36px;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #d9aa70;
+					padding: 0 4px;
+				}
 			}
 
 			&:not(:last-child) {
@@ -79,9 +97,17 @@
 				z-index: 1;
 			}
 
-			&-item:not(:last-child) {
-				margin-right: 0;
-				margin-bottom: 30px;
+			&-item {
+
+				&:not(:last-child) {
+					margin-right: 0;
+					margin-bottom: 30px;
+				}
+
+				&--active::after {
+					top: 20px;
+					left: -4px;
+				}
 			}
 		}
 
