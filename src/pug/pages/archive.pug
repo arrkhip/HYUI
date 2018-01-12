@@ -1,0 +1,16 @@
+extends ../layout/layoutBase.pug
+
+block content
+	+b.archive-page
+		+page-header()
+
+		+page-promo('../img/page-promo--archive.png', 'Архiв', 'У цьому роздiлi   ви можете переглянути будь-якi з наявних випускiв журналу “Свiт науки та освiти”.', 'Підписатися на розсилку')
+		
+		+e.container
+			+e.list-cards
+				+card-file('../img/card-file1.png', 'Ciчень  2018 року')
+				+card-file('../img/card-file1.png', 'Ciчень  2018 року')
+				+card-file('../img/card-file1.png', 'Ciчень  2018 року')
+				+card-file('../img/card-file1.png', 'Ciчень  2018 року')
+
+		+page-footer()
