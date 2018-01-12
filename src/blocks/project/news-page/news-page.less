@@ -1,0 +1,20 @@
+.news-page {
+
+	& .page-promo__descr {
+		max-width: 270px;
+	}
+
+	&__list-cards {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 75px 0;
+
+		& .card-news {
+
+			&:not(:nth-child(-n+4)) {
+				margin-top: 50px;
+			}
+		}
+	}
+}
