@@ -4,6 +4,8 @@ $(document).ready(function() {
 		$('.page-header__list').toggleClass('page-header__list--active');
 	});
 
+
+	// fixed navigation
 	var nav = document.querySelector('.page-header');
 	var topOffset = 50;
 

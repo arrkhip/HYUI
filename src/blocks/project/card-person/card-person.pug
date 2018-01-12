@@ -1,0 +1,7 @@
+mixin card-person(imgUrl, name, post)
+	+b.card-person
+		+e.img(style='background-image: url(' + imgUrl + ')') 
+		+e.inner
+			+e.name!= name
+			+e.post= post
+			block
