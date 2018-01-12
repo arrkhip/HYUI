@@ -1,0 +1,11 @@
+extends ../layout/layoutBase.pug
+
+block content
+	+b.contacts-page
+		+page-header()
+
+		+page-promo('../img/page-promo--contacts.png', 'Контакти', 'Журнал інформує про події наукового життя та юридичної освіти в Україні, проводить власні наукові дослідження, конференції та інші наукові заходи, надає інші послуги', 'Підписатися на розсилку')
+		
+		+contacts()
+				
+		+page-footer()
