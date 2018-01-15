@@ -1,6 +1,7 @@
-mixin card-about(title, descr)
+mixin card-about(title, descr, name)
 	+b.card-about
-		+e.icon I
+		+e.SVG.icon
+			use(xlink:href='../img/sprite.svg#' + name)
 		+e.content
 			+e.title= title
 			+e.descr!= descr

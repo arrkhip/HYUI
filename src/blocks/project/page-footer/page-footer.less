@@ -42,7 +42,26 @@
 		text-align: right;
 
 		&-icon {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 3px 0;
 
+			&:not(:last-child) {
+				padding-right: 10px;
+				margin-right: 10px;
+				border-right: 1px solid #505050;
+			}
+
+			& svg {
+				width: 18px;
+				height: 18px;
+				fill: #fff;
+				.trs(fill);
+
+				&:hover {
+					fill: @orange;
+				}
+			}
 		}
 	}
 

@@ -6,10 +6,21 @@ mixin page-footer()
 			+e.btn-wrapper
 				+e.BUTTON.btn.btn ЗВ'ЯЗАТИСЯ З НАМИ
 			+e.social
-				+e.A.social-icon(href="#") i
-				+e.A.social-icon(href="#") i
-				+e.A.social-icon(href="#") i
-				+e.A.social-icon(href="#") i
+				+e.A.social-icon(href="#")
+					svg
+						use(xlink:href='../img/sprite.svg#facebook-logo')
+				+e.A.social-icon(href="#")
+					svg
+						use(xlink:href='../img/sprite.svg#twitter-logo')
+				+e.A.social-icon(href="#")
+					svg
+						use(xlink:href='../img/sprite.svg#google-plus')
+				+e.A.social-icon(href="#")
+					svg
+						use(xlink:href='../img/sprite.svg#linkedin-logo')
+				+e.A.social-icon(href="#")
+					svg
+						use(xlink:href='../img/sprite.svg#instagram-logo')
 		+e.copyright
 			+e.copyright-container
 				p &copy; Copyright 2017 .  All Rights Reserved.

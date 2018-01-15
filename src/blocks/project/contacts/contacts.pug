@@ -5,17 +5,20 @@ mixin contacts
 			+e.wrapper
 				+e.info
 					+e.info-item
-						+e.info-item-icon i
+						+e.SVG.info-item-icon
+							use(xlink:href='../img/sprite.svg#game')
 						+e.P.info-item-text 
 							<span>Адреса</span> 61024, м. Харків, <br> вул. Пушкінська, 77, каб. 116
 					+e.info-item
-						+e.info-item-icon i
+						+e.SVG.info-item-icon
+							use(xlink:href='../img/sprite.svg#tel')
 						+e.P.info-item-text 
 							<span>Телефон</span> 
 							a(href='tel:+380976419382') 38 (097) 641-93-82; <br> 
 							a(href='tel:+380956419382') 38 (095) 641-93-82
 					+e.info-item
-						+e.info-item-icon i
+						+e.SVG.info-item-icon
+							use(xlink:href='../img/sprite.svg#message')
 						+e.P.info-item-text 
 							<span>Email</span>
 							a(href='mailto:redactor@dlf-journal.com.ua') redactor@dlf-journal.com.ua
