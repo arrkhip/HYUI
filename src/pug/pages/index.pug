@@ -3,6 +3,18 @@ extends ../layout/layoutBase.pug
 block content
 	+b.index-page
 		+page-header()
+			li.page-header__list-item.page-header__list-item--active
+				a(href="index.html") Про журнал
+			li.page-header__list-item
+				a(href="editorial-board.html") Редакцiйна колегiя
+			li.page-header__list-item
+				a(href="authors.html") Авторам
+			li.page-header__list-item
+				a(href="news.html") Новини
+			li.page-header__list-item
+				a(href="archive.html") Архiв
+			li.page-header__list-item
+				a(href="contacts.html") Контакти
 
 		+page-promo('../img/page-promo--home.png', 'ЮРИДИЧНИЙ НАУКОВИЙ ЖУРНАЛ', 'Журнал інформує про події наукового життя та юридичної освіти в Україні, проводить власні наукові дослідження, конференції та інші наукові заходи, надає інші послуги', 'Підписатися на розсилку')
 

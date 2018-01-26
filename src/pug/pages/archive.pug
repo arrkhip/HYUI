@@ -3,6 +3,18 @@ extends ../layout/layoutBase.pug
 block content
 	+b.archive-page
 		+page-header()
+			li.page-header__list-item
+				a(href="index.html") Про журнал
+			li.page-header__list-item
+				a(href="editorial-board.html") Редакцiйна колегiя
+			li.page-header__list-item
+				a(href="authors.html") Авторам
+			li.page-header__list-item
+				a(href="news.html") Новини
+			li.page-header__list-item.page-header__list-item--active
+				a(href="archive.html") Архiв
+			li.page-header__list-item
+				a(href="contacts.html") Контакти
 
 		+page-promo('../img/page-promo--archive.png', 'Архiв', 'У цьому роздiлi   ви можете переглянути будь-якi з наявних випускiв журналу “Свiт науки та освiти”.', 'Підписатися на розсилку')
 		

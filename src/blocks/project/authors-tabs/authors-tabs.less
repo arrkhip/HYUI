@@ -1,0 +1,155 @@
+.authors-tabs {
+	padding: 75px 0;
+
+	&__container {
+
+	}
+
+	&__sidebar {
+		display: inline-block;
+		width: 255px;
+
+		&-download {
+			display: flex;
+			align-items: center;
+			margin-top: 30px;
+
+			&-icon {
+				width: 25px;
+				height: 25px;
+				margin-left: 25px;
+				margin-right: 35px;
+				fill: @orange;
+			}
+		}
+	}
+
+	&__header {
+		padding: 15px 0;
+		background-color: #f8f8f8;
+
+		&-caption {
+			padding: 15px 25px;
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+			color: fade(@grey-dark, 50%);
+
+			&--active {
+				position: relative;
+				color: @grey-dark;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 18px;
+					left: -7.5px;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					background-color: @orange;
+				}
+			}
+
+			&:not(.authors-tabs__header-caption--active) {
+				cursor: pointer;
+				.trs(color);
+
+				&:hover {
+					color: @orange;
+				}
+			}
+
+			&:not(:first-child) {
+				border-top: 1px solid #d7d7d7;
+			}
+		}
+	}
+
+
+	&__info {
+		display: inline-block;
+		margin-left: 120px;
+		max-width: 650px;
+	}
+
+	&__content {
+		padding-top: 30px;
+
+		& b {
+			color: @grey-dark;
+		}
+
+		& p {
+			line-height: 2.3rem;
+		}
+
+		&-title {
+			margin-bottom: 15px;
+			font-weight: 500;
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+			color: @grey-dark;
+		}
+
+		&-descr {
+			margin-top: 30px;
+			font-weight: 500;
+			color: @grey-dark;
+		}
+
+	}
+
+	@media @width-lg {
+		
+		&__info {
+			max-width: 625px;
+			margin-left: 45px;
+		}
+	}
+
+	@media @width-md {
+
+		&__sidebar {
+			width: 100%;
+
+			&-download {
+				justify-content: center;
+				margin-top: 30px;
+
+				&-icon {
+					display: none;
+				}
+			}
+		}
+
+		&__header {
+			padding: 5px 0px;
+
+			&-caption {
+				padding: 10px 25px;
+				font-size: 1.4rem;
+				line-height: 1.6rem;
+
+				&--active::before {
+					top: 10px;
+				}
+			}
+		}
+
+		&__info {
+			max-width: 100%;
+			margin-left: 0;
+		}
+
+		&__content {
+
+			&-title {
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+		}
+
+	} 
+
+
+}

@@ -3,18 +3,30 @@ extends ../layout/layoutBase.pug
 block content
 	+b.news-page
 		+page-header()
+			li.page-header__list-item
+				a(href="index.html") Про журнал
+			li.page-header__list-item
+				a(href="editorial-board.html") Редакцiйна колегiя
+			li.page-header__list-item
+				a(href="authors.html") Авторам
+			li.page-header__list-item.page-header__list-item--active
+				a(href="news.html") Новини
+			li.page-header__list-item
+				a(href="archive.html") Архiв
+			li.page-header__list-item
+				a(href="contacts.html") Контакти
 
 		+page-promo('../img/page-promo--news.png', 'Новини', 'У цьому роздiлi  ви можете переглянути останнi новини та цiкавi факти', 'Підписатися на розсилку')
 		
 		+e.container
 			+e.list-cards
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
-				+card-news('../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых Суд и общие положения', 'Дата : 15. 02. 2018')
+				+card-news('../news-open.html', '../img/card-news__banner1.png', 'Популярная наука: демотиваторы для ученых', 'Дата : 15. 02. 2018')
 
 		+page-footer()

@@ -3,15 +3,19 @@ include ../connect/_blocks.pug
 
 doctype
 html(lang="ru")
-  include ../template/head.pug
-  body
+	include ../template/head.pug
+	body
     
-    block content
+		block content
+		block modal
+			+modal('Форма зворотнього зв`язку')
+				input.modal__input(type='text' name='userName', placeholder='Iм`я')
+				input.modal__input(type='text' name='userLastName', placeholder='Прiзвище')
+				input.modal__input(type='text' name='userLastMail', placeholder='E-mail')
+				input.modal__input(type='text' name='theme', placeholder='Тема')
+				textarea.modal__textarea(placeholder='Повiдомлення', name='message')
+				button.btn.modal__btn Надiслати
+    	
 
-    block scripts
-      include ../template/scripts.pug
-
-
-    
-
-    
+		block scripts
+			include ../template/scripts.pug
