@@ -1,8 +1,9 @@
 mixin modal(title)
-	+b.FORM.modal
-		+e.head
-			+e.head-title= title
-			+e.head-close X
-		+e.body
-			block
+	+b.modal
+		+e.FORM.inner
+			+e.head
+				+e.head-title= title
+				+e.head-close X
+			+e.body
+				block
  				
