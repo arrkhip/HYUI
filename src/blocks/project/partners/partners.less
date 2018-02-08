@@ -10,7 +10,10 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		max-width: 520px;
+		margin: auto;
 		margin-top: 45px;
+		margin-bottom: 45px;
 
 		&-item {
 			display: inline-flex;
@@ -30,6 +33,36 @@
 				border-right: 1px solid #d7d7d7;
 			}
 		}
+	}
+
+	&__info {
+		max-width: 730px;
+		margin: auto;
+
+		&-item {
+			list-style: inherit;
+			line-height: 2.2rem;
+
+			&:nth-child(1), 
+			&:nth-child(7) {
+				list-style: none;
+			}
+
+			&:nth-child(7) {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__btn {
+		display: block;
+		width: 175px;
+		height: 25px;
+		margin: auto;
+		margin-top: 25px;
+		padding: 6px 10px 8px 10px;
+		border-width: 1px;
+		font: 400 14px/14px @font-second;
 	}
 
 	@media @width-lg {
