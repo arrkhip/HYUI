@@ -1,11 +1,21 @@
-var modal = document.querySelector('.modal');
-var btn 	= document.querySelector('.btn');
-var close = document.querySelector('.modal__head-close');
+$( document ).ready(function() {
+    
+    // modal dispatch
+    $('.btn--open-dispatch').click(function() {
+    	$('.modal--dispatch').fadeIn();
+    });
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+    $('.modal--dispatch .modal__head-close').click(function() {
+    	$('.modal--dispatch').fadeOut();
+    });
 
-close.onclick = function() {
-    modal.style.display = "none";
-}
+
+    // modal contact
+    $('.btn--open-contact').click(function() {
+    	$('.modal--contact').fadeIn();
+    });
+
+    $('.modal--contact .modal__head-close').click(function() {
+    	$('.modal--contact').fadeOut();
+    });
+});
