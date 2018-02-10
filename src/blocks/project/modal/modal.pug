@@ -3,7 +3,9 @@ mixin modal(mod, title)
 		+e.FORM.inner
 			+e.head
 				+e.head-title= title
-				+e.head-close X
+				+e.head-close 
+					svg
+						use(xlink:href='../img/sprite.svg#cross')
 			+e.body
 				block
  				

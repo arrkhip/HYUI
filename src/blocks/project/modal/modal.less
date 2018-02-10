@@ -39,8 +39,18 @@
 			position: absolute;
 			top: 12px;
 			right: 30px;
-			color: #fff;
-			cursor: pointer;
+
+			& svg {
+				width: 19px;
+				height: 19px;
+				fill: #fff;
+				cursor: pointer;
+				.trs(fill);
+
+				&:hover {
+					fill: rgba(255,255,255,.6);
+				}
+			}
 		}
 	}
 
@@ -140,8 +150,13 @@
 		}
 
 		&-close {
-			top: 10px;
+			top: 11px;
 			right: 15px;
+
+			& svg {
+				width: 10px;
+				height: 10px;
+			}
 		}
 	}
 
