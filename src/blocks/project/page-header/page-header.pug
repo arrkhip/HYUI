@@ -2,7 +2,11 @@ mixin page-header()
 	+b.HEADER.page-header
 		+e.container
 			+e.A.logo(href="/")
-			+e.SPAN.switch.js-page-header__switch &#9776;
+			+e.SPAN.switch.js-page-header__switch 
+				svg
+					use(xlink:href='../img/sprite.svg#menu')
+				svg
+					use(xlink:href='../img/sprite.svg#cross')
 			+e.UL.list
 				block
 
