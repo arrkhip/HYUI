@@ -1,6 +1,6 @@
-mixin modal(mod, title)
+mixin modal(id, mod, title)
 	+b.modal(class= mod)
-		+e.FORM.inner
+		+e.FORM.inner(id= id)
 			+e.head
 				+e.head-title= title
 				+e.head-close 

@@ -8,7 +8,7 @@ html(lang="ru")
     
 		block content
 		block modal
-			+modal('--contact', 'Форма зворотнього зв`язку')
+			+modal('form-contact','--contact', 'Форма зворотнього зв`язку')
 				input.modal__input(type='text' name='userName', placeholder='Iм`я')
 				input.modal__input(type='text' name='userLastName', placeholder='Прiзвище')
 				input.modal__input(type='text' name='userLastMail', placeholder='E-mail')
@@ -16,7 +16,7 @@ html(lang="ru")
 				textarea.modal__textarea(placeholder='Повiдомлення', name='message')
 				button.btn.modal__btn Надiслати
 
-			+modal('--dispatch', 'Підписатися на розсилку')
+			+modal('form-dispatch', '--dispatch', 'Підписатися на розсилку')
 				input.modal__input(type='text' name='userName', placeholder='Iм`я')
 				input.modal__input(type='text' name='userLastMail', placeholder='E-mail')
 				button.btn.modal__btn Підписатися
