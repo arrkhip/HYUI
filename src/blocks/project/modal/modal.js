@@ -24,20 +24,18 @@ $( document ).ready(function() {
     });
 
 
-  //   $("#form-form-dispatch").submit(function() {
-
-  //      var form_data = $(this).serialize(); //собераем все данные из формы
-  //      $.ajax({
-  //           type: "POST", //Метод отправки
-  //           url: "mail.php", //путь до php фаила отправителя
-  //           data: form_data,
-  //           success: function() {
-  //            alert("Ваше сообщение отпрвлено!");
-  //          });
-  //    });
-  // });
+    $("#form-dispatch").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $(this).serialize()
+    }).done(function() {
+        $(".modal").fadeOut();
+    });
+    return false;
+  });
 
 
 
 
-});
+  });

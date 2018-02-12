@@ -17,10 +17,9 @@ html(lang="ru")
 				button.btn.modal__btn Надiслати
 
 			+modal('form-dispatch', '--dispatch', 'Підписатися на розсилку')
-				input.modal__input(type='text' name='userName', placeholder='Iм`я')
-				input.modal__input(type='text' name='userLastMail', placeholder='E-mail')
-				button.btn.modal__btn Підписатися
+				input.modal__input(type='text' name='name', placeholder='Iм`я')
+				input.modal__input(type='text' name='email', placeholder='E-mail')
+				input.btn.modal__btn(type='submit' value='Підписатися') 
     	
-
 		block scripts
 			include ../template/scripts.pug
