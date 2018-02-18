@@ -99,6 +99,29 @@
 
 	}
 
+	&__table-pay {
+		width: 100%;
+
+		& tr {
+
+			&:nth-child(4) td:last-child {
+				opacity: 0;
+			}
+		}
+
+
+		& td {
+			vertical-align: middle;
+			font-weight: bolder;
+
+			&:last-child {
+				padding-top: 3px;
+				border: 2px solid #d9aa70;
+				text-align: center;
+			}
+		}
+	}
+
 	@media @width-lg {
 		
 		&__info {
