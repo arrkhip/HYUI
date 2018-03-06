@@ -1,2 +1,2 @@
 # HYUI
-wse.nlu.edu.ua
+http://wse.nlu.edu.ua
