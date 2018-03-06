@@ -122,6 +122,30 @@
 		}
 	}
 
+	&__directions-table {
+		width: 100%;
+		border-collapse: collapse;
+		border: 1px solid black;
+
+		& td {
+			padding: 2px;
+			line-height: 1.8rem;
+			border-bottom: 1px solid black;
+			color: @grey-dark;
+
+			&:first-child {
+				width: 70px;
+				border-right: 1px solid black;
+				text-align: center;
+				padding-right: 3px;
+			}
+
+			&:last-child {
+				padding-left: 7px;
+			}
+		}
+	}
+
 	@media @width-lg {
 		
 		&__info {
